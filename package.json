@@ -1,0 +1,39 @@
+{
+  "name": "github-profiles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "scripts": {
+    "start:dev": "nodemon server/index.js",
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run start:dev\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "install-client":"cd client && npm install",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false && npm install --prefix client && npm run build --prefix client",
+    "client": "npm start --prefix client"
+  },
+  "engines": {
+    "node": "v14.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fiyin-Anne/github-profiles.git"
+  },
+  "author": "Fiyin Akinsiku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fiyin-Anne/github-profiles/issues"
+  },
+  "homepage": "https://github.com/Fiyin-Anne/github-profiles#readme",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}

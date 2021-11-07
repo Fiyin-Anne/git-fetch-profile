@@ -1,0 +1,8 @@
+{
+    "name":"git-fetch-profile",
+    "description":"fetch github user profile",
+    "repository":"https://github.com/Fiyin-Anne/github-profiles",
+    "logo":"http://node-js-sample.herokuapp.com/node.svg",
+    "keywords":["node","express","react", "github rest api"],
+    "image":"heroku/nodejs"
+  }
